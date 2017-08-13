@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="yaci.Views.MainPage"
+             BindingContext="{Binding Main, Source={DynamicResource Key=Locator}}">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label
+                HorizontalOptions="Center"
+                FontSize="Large"
+                Text="Cálculo de Porosidad en figuras cúbicas">
+            </Label>
+            <Label
+                Text="Volumen de poros">
+            </Label>
+            <Entry
+                Text="{Binding Vol_poros, Mode=TwoWay}"
+                Keyboard="Numeric"
+                Placeholder="Ingrese el volumen poral">
+            </Entry>
+            <Label
+                Text="Volumen de la matriz">
+            </Label>
+            <Entry
+                Text="{Binding Vol_matriz, Mode=TwoWay}"
+                Keyboard="Numeric"
+                Placeholder="Ingrese el volumen de la matriz">
+            </Entry>
+            <Button
+                Command="{Binding CalcularCommand}"
+                Text="Calcular">
+            </Button>
+            <Label
+                Text="La porosidad es de...">
+            </Label>
+            <Entry
+                Text="{Binding Porosidad, Mode=TwoWay}"
+                IsEnabled="false"
+                Placeholder="Valor de porosidad">
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

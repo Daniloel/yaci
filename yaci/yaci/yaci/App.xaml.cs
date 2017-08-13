@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Xamarin.Forms;
-
 namespace yaci
 {
-	public partial class App : Application
+    using Xamarin.Forms;
+    using Views;
+    public partial class App : Application
 	{
 		public App ()
-		{
-			InitializeComponent();
-
-			MainPage = new yaci.MainPage();
+        {
+            
+			MainPage = new yaci.Views.MainPage();
 		}
 
 		protected override void OnStart ()
