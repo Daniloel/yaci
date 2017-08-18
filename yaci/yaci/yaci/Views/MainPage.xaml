@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="yaci.Views.MainPage"
-             BindingContext="{Binding Main, Source={DynamicResource Key=Locator}}">
+             BindingContext="{Binding Main, Source={StaticResource Key=Locator}}">
     <ContentPage.Content>
-        <StackLayout Padding="20">
+        <StackLayout Padding="30">
             <Label
                 HorizontalOptions="Center"
                 FontSize="Large"
@@ -34,8 +34,8 @@
                 Text="La porosidad es de...">
             </Label>
             <Entry
-                Text="{Binding Porosidad, Mode=TwoWay}"
-                IsEnabled="false"
+                Text="{Binding Porosity, Mode=TwoWay}"
+                IsEnabled="False"
                 Placeholder="Valor de porosidad">
             </Entry>
         </StackLayout>

@@ -2,7 +2,7 @@
 <Application 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:infra="clr-namespace:yaci.Infraestructure;assembly=yaci"
+    xmlns:infra="clr-namespace:yaci.Infraestructure"
     x:Class="yaci.App">
     <Application.Resources>
         <ResourceDictionary>

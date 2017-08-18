@@ -7,11 +7,12 @@
 
     public class InstanceLocator
     {
-        public MainViewModel Main { get; set; }
-
-        public InstanceLocator()//Constructor
+        public InstanceLocator()
         {
             Main = new MainViewModel();
         }
+        public MainViewModel Main { get; set; }
+
+
     }
 }

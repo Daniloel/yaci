@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yaci.UWP", "yaci\yaci.UWP\y
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		yaci\yaci\yaci.projitems*{014e6ae0-39ee-4c16-b890-29c6f89928c6}*SharedItemsImports = 4
 		yaci\yaci\yaci.projitems*{36f78647-3264-4a19-ac08-f61da4b86f1d}*SharedItemsImports = 13
 		yaci\yaci\yaci.projitems*{d44be694-7e1b-4697-ac9c-37402241d304}*SharedItemsImports = 4
 		yaci\yaci\yaci.projitems*{f1fdfd1c-7eae-43c7-979d-61bb1431b66d}*SharedItemsImports = 4

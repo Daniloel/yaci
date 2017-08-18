@@ -11,7 +11,7 @@ namespace yaci
 	{
 		public App ()
         {
-            
+            InitializeComponent();
 			MainPage = new yaci.Views.MainPage();
 		}
 
