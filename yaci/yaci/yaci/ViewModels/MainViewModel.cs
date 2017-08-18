@@ -71,12 +71,15 @@ namespace yaci.ViewModels
                  await Application.Current.MainPage.DisplayAlert("Error", "Debes ingresar un valor numerico en volumen de matriz", "Aceptar");
                  return;
              }
-
+             if (volporal >= volmatriz)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", "Recuerda que el volumen poral debe ser menor que el de la matriz, revisa los datos de entrada!", "Aceptar");
+                return;
+            }
 
 
             var Calc_porosity = ((volmatriz - volporal) / volmatriz);
-            Porosity = string.Format("{0:C2}", Calc_porosity);
-            await Application.Current.MainPage.DisplayAlert("Atencion", "La porosidad es de "+Porosity, "Aceptar");
+            Porosity = string.Format("{0:P2}", Calc_porosity);
 
 
         }
