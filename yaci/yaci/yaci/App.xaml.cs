@@ -12,7 +12,7 @@ namespace yaci
 		public App ()
         {
             InitializeComponent();
-			MainPage = new yaci.Views.MainPage();
+			MainPage = new NavigationPage(new yaci.Views.Main.MainPage());
 		}
 
 		protected override void OnStart ()

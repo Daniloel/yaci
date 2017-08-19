@@ -7,14 +7,18 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace yaci.Views
+namespace yaci.Views.Main
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MainPage : ContentPage
 	{
 		public MainPage ()
 		{
-            InitializeComponent();
+			InitializeComponent ();
+            btnPorosity.Clicked += (sender, e) =>
+            {
+                Navigation.PushAsync(new Porosity());
+            };
 		}
 	}
 }
