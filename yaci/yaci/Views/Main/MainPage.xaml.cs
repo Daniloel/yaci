@@ -22,7 +22,8 @@ namespace yaci.Views.Main
             };
             btnFlowRate.Clicked += (sender, e) =>
             {
-                Navigation.PushAsync(new Operations.FlowRate());
+                DisplayAlert("Noticia", "Opción no habilitada", "Aceptar");
+                //Navigation.PushAsync(new Operations.FlowRate());
             };
             btnActiveopt.Clicked += (sender, e) =>
             {
