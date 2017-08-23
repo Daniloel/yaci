@@ -1,11 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="yaci.Views.Operations.FlowRate">
+             x:Class="yaci.Views.Operations.FlowRate"
+             BackgroundColor="Salmon">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Flow Rate" />
-            
-        </StackLayout>
+        <ScrollView>
+            <StackLayout 
+            Orientation="Vertical" 
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            Padding="20">
+                <Label
+                    Text="Flujo Volumetrico"
+                    HorizontalTextAlignment="Center"
+                    FontSize="30">
+                    
+                </Label>
+            <Label
+                Text="Permeabilidad:">
+            </Label>
+            <Entry
+                Placeholder="Ingrese la permeabilidad Ko[mD]">
+            </Entry>
+            <Label
+                Text="Espesor">
+            </Label>
+            <Entry
+                Placeholder="Ingrese espesor h[ft]">
+            </Entry>
+            <Label
+                Text="Presión estática:">
+            </Label>
+            <Entry
+                Placeholder="Ingrese la presión estática P[psi]">
+            </Entry>
+            <Label
+                Text="Presión de evaluación">
+            </Label>
+            <Entry
+                Placeholder="Ingrese la presión de evaluación P[psi]">
+            </Entry>
+            <Label 
+                Text="Tipo de flujo:">
+            </Label>
+            <Picker
+                Title="Tipo de flujo">
+            </Picker>
+            <ActivityIndicator></ActivityIndicator>
+            <Button
+                Text="Calcular flujo volumetrico"
+                BackgroundColor="Navy"
+                BorderColor="Black"
+                TextColor="White"
+                BorderRadius="20"
+                FontAttributes="Bold"
+                HeightRequest="50">
+            </Button>
+            <Label
+                Text="Calculando..."
+                BackgroundColor="Silver"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                VerticalOptions="FillAndExpand"
+                Margin="0,10">
+                
+            </Label>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
