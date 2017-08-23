@@ -5,7 +5,7 @@
              BackgroundColor="DarkGreen"
              BindingContext="{Binding Main, Source={StaticResource Key=Locator}}">
     <ContentPage.Content>
-        <StackLayout Padding="30" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Chocolate">
+        <StackLayout Padding="40" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" BackgroundColor="Chocolate">
             <Label x:Name="lTitle" FontAttributes="Bold" FontSize="Large" FontFamily="Droid Sans Mono" 
                    Text="Welcome to Yaci Operations!"></Label>
             <Button x:Name="btnActiveopt" HorizontalOptions="FillAndExpand" Text="Activar opciones"></Button>
