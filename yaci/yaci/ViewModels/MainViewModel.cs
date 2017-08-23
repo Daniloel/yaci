@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace yaci.ViewModels
 {
-    class MainViewModel
+    public class MainViewModel
     {
+        public MainViewModel()
+        {
+            
+        }
     }
 }
